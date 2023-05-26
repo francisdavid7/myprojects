@@ -1,0 +1,703 @@
+@font-face {
+    font-family: hanken;
+    src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: variable;
+    src: url(fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: variable;
+}
+/** main styling **/
+.container{
+    width: 100%;
+    height: 590vh;
+    overflow: hidden;
+}
+header{
+    width: 75%;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+}
+header ul li{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+header ul li a{
+    color: rgb(3, 3, 31);
+    transition: color 0.30s ease;
+}
+header ul li a:hover{
+    color: rgb(72, 72, 196);
+}
+.header2{
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+    height: 90vh;
+}
+.header2 h1{
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.header3{
+    position: absolute;
+    top: 210px;
+}
+.header2 hr{
+    height: 8px;
+    width: 15%;
+    margin-left: 30px;
+    border-radius: 15px;
+    background: white;
+}
+.header-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.header-image img{
+    width: 100%;
+    height: 100%;
+}
+/** about row **/
+.about{
+    width: 100%;
+    height: 25vh;
+    margin-top: -10px;
+}
+.col{
+    float: left;
+}
+.about-types-carrier{
+    width: 97%;
+    margin-left: 40px;
+}
+.about-types{
+    width: 29%;
+    margin-left: 39px;
+}
+.icon{
+    width: 28%;
+    margin-left: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px 2px rgb(227, 236, 238);
+}
+.icon img{
+    width: 70%;
+}
+.icon-text{
+    width: 65%;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+.icon-text p{
+    font-weight: 600;
+    color: gray;
+}
+/** courses row **/
+.courses{
+    width: 82%;
+    margin: 20px auto;
+    height: 145vh;
+}
+.header-text-for-courses{
+    width: 35%;
+    margin-left: 5px;
+}
+.header-text-for-courses hr{
+    height: 8px;
+    background: rgb(64, 64, 209);
+    border-radius: 20px;
+    width: 30%;
+    margin-top: 8px;
+}
+.types-of-courses{
+    width: 100%;
+    padding: 5px;
+    height: 135vh;
+}
+.course{
+    width: 30%;
+    margin-top: 15px;
+}
+.carrier{
+    margin-top: 35px;
+}
+.course-to{
+    margin-left: 48px;
+}
+.image-course{
+    width: 100%;
+    position: relative;
+    height: 31.5vh;
+    box-shadow: 5px 5px 20px 2px rgb(227, 236, 238);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.course-image{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.course-image img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.wo{
+    height: 31vh;
+}
+.wo img {
+    height: 105%;
+}
+.price{
+    width: 15%;
+    text-align: center;
+    background: rgb(64, 64, 209);
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 1px;
+    position: absolute;
+    bottom: -10px;
+    right: 50px;
+}
+.rating{
+    width: 93%;
+    margin: auto;
+    height: 24vh;
+    box-shadow: 0px 5px 20px 2px rgb(227, 236, 238);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 1px solid transparent;
+}
+.text-rating{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.star{
+    width: 35%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.stars{
+    width: 20%;
+}
+.stars img{
+    width: 100%;
+}
+.star-rating{
+    width: 40%;
+    margin-top: 12px;
+}
+.star-rating p{
+    font-size: 13px;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: 500;
+    color: rgb(33, 53, 53);
+}
+.criteria{
+    width: 100%;
+    margin-top: 65px;
+    height: 30px;
+}
+.crit{
+    width: 28%;
+    margin-left: 10px;
+}
+.icon-crit{
+    width: 30%;
+}
+.icon-crit img{
+    width: 100%;
+}
+.text-crit{
+    width: 63%;
+    font-size: 10px;
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/** search course row **/
+.course-search{
+    width: 100%;
+    margin-top: 50px;
+    height: 65vh;
+    background: rgba(135, 206, 250, 0.144);
+}
+.video, .video-text{
+    width: 45%;
+    margin-top: 30px;
+}
+.video{
+    float: right;
+    margin-right: 50px;
+}
+.video video{
+    width: 100%;
+}
+.video-text{
+    margin-left: 100px;
+    width: 35%;
+    margin-top: 50px;
+}
+.video-text hr{
+    width: 17%;
+    height: 8px;
+    background: rgb(78, 78, 245);
+    border-radius: 20px;
+}
+.video-text p{
+    font-size: 18px;
+    color: darkslategrey;
+    margin-top: 30px;
+}
+.video-text button{
+    padding: 7px 12px;
+    font-size: 18px;
+    color: white;
+    background: rgb(78, 78, 245);
+    border: none;
+    border-radius: 5px;
+    word-spacing: 5px;
+    margin-top: 30px;
+}
+.video-text button:hover{
+    background: white;
+    color: rgb(78, 78, 245);
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+/**feedback styling **/
+.feedback{
+    width: 95%;
+    margin: auto;
+    padding: 50px;
+    height: 62vh;
+}
+.image-student{
+    width: 24%;
+    padding: 10px;
+    background: rgba(135, 206, 250, 0.144);
+}
+.image-student img{
+    width: 100%;
+}
+.student-feedback{
+    width: 40%;
+    margin-left: 50px;
+}
+.feedback-heading{
+    width: 80%;
+}
+.feedback-heading h1{
+    font-family: hanken;
+    color: rgb(40, 66, 66);
+}
+.feedback-heading hr{
+    height: 8px;
+    width: 24%;
+    border-radius: 20px;
+    background: rgb(78, 78, 245);
+}
+.student-profile{
+    width: 17%;
+    margin-top: 10px;
+    height: 12vh;
+    background: rgba(135, 206, 250, 0.144);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgb(225, 237, 241);
+}
+.student-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.student-info{
+    width: 50%;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.student-info h3{
+    color: rgb(40, 66, 66);
+}
+.student-info p{
+    color: rgb(40, 66, 66);
+    font-family: hanken;
+}
+.student-text{
+    width: 100%;
+    margin-top: 98px;
+}
+.starr{width: 20%;}
+.student-text p{
+    font-size: 18px;
+}
+.student-raring{
+    margin-top: 5px;
+    width: 22%;
+    height: 4vh;
+}
+/** blog styling **/
+.blog{
+    width: 100%;
+    background: rgba(135, 206, 250, 0.144);
+    height: 80vh;
+    border: 1px solid transparent;
+}
+.blog-carrier{
+    width: 90%;
+    margin: 30px auto;
+    height: 74vh;
+}
+.blog-carrier .course{
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px 2px rgb(244, 250, 252);
+}
+.blog-carrier .image-course{
+    box-shadow: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.blog-carrier .image-course img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.blog-carrier h1{
+    color: rgb(49, 66, 66);
+}
+.blog-carrier hr{
+    width: 5%;
+    height: 6px;
+    border-radius: 20px;
+    background: rgb(78, 78, 245);
+}
+.blog-carrier .rating{
+    border-radius: 0;
+    width: 100%;
+    background: white;
+    height: 22vh;
+    box-shadow: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.in-comment{
+    margin: auto;
+    width: 95%;
+    height: 20vh;
+}
+.comment{
+    width: 40%;
+    margin-left: 15px;
+}
+.comment p{
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(49, 66, 66);
+}
+.sect{
+    margin-left: 30px;
+}
+.comment-sect{
+    width: 90%;
+    margin: 45px auto;
+    border: 1px solid transparent;
+}
+.comment-sect p{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(49, 66, 66);
+    margin-top: 30px;
+}
+/** newsletter styling **/
+.newsletter{
+    width: 100%;
+}
+.subscribe-box{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+.subscribe-box h2{
+    color: rgb(39, 53, 53);
+    margin-top: 30px;
+}
+.subscribe-box p{
+    font-weight: bolder;
+    color: rgb(74, 99, 99);
+    margin-top: 20px;
+    font-size: 18px;
+}
+input[type=email]{
+    width: 35%;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 5px 20px 0px rgb(204, 197, 197);
+    margin-bottom: 50px;
+    border: none;
+}
+.subscribe-box input[type=submit]{
+    padding: 15px 32px;
+    border: 0;
+    background: rgb(78, 78, 245);
+    color: white;
+    font-weight: 600;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 5px lightblue;
+}
+.subscribe-box [type=submit]:hover{
+    background: rgb(138, 138, 226);
+    box-shadow: 1px 1px 5px rgb(78, 78, 245);
+    transition: all 0.10s ease-in-out;
+    cursor: pointer;
+}
+/** footer styling **/
+.footer{
+    margin-top: 2px;
+    width: 100%;
+    background: rgba(135, 206, 250, 0.144);
+    height: 46vh;
+}
+.contacts{
+    width: 15%;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.contacts h1{
+    color: darkslategrey;
+}
+.contacts p{
+    font-size: 17px;
+    color: darkslategrey;
+    margin-top: 15px;
+}
+.queen{
+    text-align: center;
+}
+.queen h2{
+    margin-top: 80px;
+}
+.icon-text-cont{
+    width: 100%;
+    height: 4vh;
+    margin-top: 10px;
+}
+.icon-cont{
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 1px 1px 4px rgb(187, 201, 214);
+}
+.icon-cont img{
+    width: 70%;
+    margin-top: 3px;
+}
+.text-cont{
+    width: 60%;
+    margin-left: 5px;
+}
+.text-cont p{
+    margin-top: 0;
+}
+
+
+/** hamburger icon styling **/
+label{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+.line{
+    width: 40px;
+    height: 5px;
+    background: black;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.line::before,
+.line::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: inherit;
+    background: inherit;
+    top: 5px;
+    border-radius: 10px;
+}
+.line::after{
+    top: 30px;
+}
+input:checked + label .line{
+    transform: rotate(135deg);
+}
+input:checked + label .line::before,
+input:checked + label .line::after{
+    top: 0;
+    transform: rotate(90deg);
+    width: 100%;
+}
+input[type=checkbox]{
+    display: none;
+}
+label{
+    opacity: 0;
+    transition: all 0.30s;
+}
+
+
+/** hamburger media styling **/
+@media screen and (max-width: 610px){
+    .container{
+        height: 1431vh;
+    }
+    ul{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        height: 55vh;
+        width: 100%;
+        right: 0;
+        background: rgb(98, 98, 230);
+        z-index: 10;
+        text-align: center;
+        transition: all 1s ease-in-out;
+        transform: translateY(-300px);
+    }
+    label{
+        opacity: 1;
+        z-index: 100;
+        left: 40px;
+    }
+    span{
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+    }
+    ul li{
+        margin-top: 20px;
+    }
+    ul span li a{
+        color: white;
+        font-size: 18px;
+        transition: color 1s ease;
+    }
+    ul span li a:hover{
+        color: skyblue;
+        font-size: 24px;
+        transition: all 0.5s ease-in-out;
+    }
+    input:checked ~ ul{
+        transform: none;
+        animation: zoom 2s ease-in-out;
+    }
+    @keyframes zoom{
+        50%{width: 80%; margin-right: 30px;}
+    }
+    input:checked + label .line{
+        background: white;
+        animation: fade 1s ease-in-out;
+
+    }
+    @keyframes fade{
+        from{background: transparent;}
+        25%{background: transparent;}
+        50%{background: transparent;}
+        75%{background: transparent;}
+        100%{background: white;}
+
+    }
+}
+
+
+/** media screen styling **/
+@media screen and (max-width: 400px){
+    .container{overflow-x: hidden;}
+    .header2{width: 100%; text-align: center;}
+    .header3 hr{margin-left: 34%; width: 40%;}
+    .about{margin: 0; margin-bottom: 40px; height: 80vh;}
+    .about-types-carrier{width: 100%;}
+    .about-types{width: 100%; margin-left: 0; margin-top: 30px;}
+    .third{margin-bottom: 50px;}
+    .header-text-for-courses{width: 100%; text-align: center;}
+    .header-text-for-courses hr{margin-left: 50px;}
+    .header-text-for-courses h1{font-size: 25px;}
+    .courses{width: 100%; height: 420vh;}
+    .course{width: 80%; margin-left: 40px; margin-top: 20px;}
+    .image-course{height: 39vh;}
+    .wo{height: 37.5vh;}
+    .criteria{margin-left: 5px;}
+    .crit{margin-top: -15px;}
+    .icon-crit{margin-top: 0;}
+    .text-crit{margin-top: 5px;}
+    .course-search{height: 125vh;}
+    .video{width: 100%; margin-right: 0;}
+    .video-text{width: 95%; margin-left: 10px; text-align: center; margin-top: 50px;}
+    .video-text hr{width: 30%; margin-left: 120px; margin-top: 10px;}
+    .video-text p{font-size: 15px;}
+    .feedback{height: 160vh;}
+    .image-student{width: 100%; border-radius: 20px;}
+    .feedback-heading{width: 100%;}
+    .feedback-heading h1{font-size: 25px; margin-top: 20px;}
+    .student-feedback{width: 100%; margin-left: 0;}
+    .student-text p{font-size: 16px; margin-top: 30px; text-align: center;}
+    .student-profile{width: 25%; margin-top: 20px;}
+    .student-info{margin-left: 30px;}
+    .student-raring{width: 60%; margin-left: 70px;}
+    .star{margin-left: 40px;}
+    .student-raring .stars{width: 15%;}
+    .blog{height: 220vh;}
+    .blog-carrier h1{text-align: center;}
+    .blog-carrier hr{width: 30%; margin-left: 50px; margin-top: 10px;}
+    .blog .course{margin-top: 30px;}
+    .blog .course .rating{margin-top: -15px;}
+    .in-comment{margin: 0; width: 100%;}
+    .comment{ width: 45%;}
+    .sect{margin-left: 5px;}
+    .comment p{font-size: 16px;}
+    .comment-sect{ text-align: center; margin-top: 0;}
+    .comment-sect p{font-size: 17px;}
+    .comment-carrier{margin-left: 10px; width: 89%;}
+    .subscribe-box p{font-size: 16px;}
+    .subscribe-box input[type=email]{width: 60%; font-size: 12px;}
+    .subscribe-box input[type=submit]{padding-top: 10px; padding-bottom: 13px; padding-left: 20px; padding-right: 20px;}
+    .footer{text-align: center; height: 220vh;}
+    .contacts{width: 100%; margin-left: 0;}
+    .icon-text-cont{margin-left: 120px; margin-top: 20px;}
+    .text-cont{margin-left: -50px;}
+}
